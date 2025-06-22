@@ -1,0 +1,405 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoVision: Object Detection & Reuse Ideas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #2e7d32;
+      --primary-dark: #1b5e20;
+      --primary-light: #81c784;
+      --secondary-color: #ff8f00;
+      --background: #f5f7fa;
+      --text-dark: #263238;
+      --text-light: #546e7a;
+      --white: #ffffff;
+      --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      --border-radius: 12px;
+      --transition: all 0.3s ease;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: var(--background);
+      color: var(--text-dark);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: var(--primary-color);
+      color: var(--white);
+      padding: 1.5rem 1rem;
+      text-align: center;
+      box-shadow: var(--shadow);
+      position: relative;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: clamp(0.8rem, 2vw, 1rem);
+      opacity: 0.9;
+      font-weight: 300;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+      width: 100%;
+    }
+
+    .dashboard {
+      background: var(--white);
+      border-radius: var(--border-radius);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      width: 100%;
+      max-width: 800px;
+      box-shadow: var(--shadow);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .dashboard h2 {
+      font-size: 1.5rem;
+      color: var(--primary-dark);
+      margin-bottom: 1rem;
+    }
+
+    /* .counter {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+    } */
+
+    .counter {
+      font-size: 1rem;
+      color: var(--text-light);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      aspect-ratio: 4 / 3;
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      background: #000;
+      margin-bottom: 2rem;
+    }
+
+    #video-placeholder {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background: #333;
+        font-size: 1.2rem;
+        }
+
+    #webcam.active {
+        display: block;
+        }
+
+    #video-placeholder.hidden {
+        display: none;
+        }
+
+    video, canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    canvas {
+      z-index: 2;
+    }
+
+    #modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.7);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      box-sizing: border-box;
+      z-index: 1000;
+      backdrop-filter: blur(5px);
+    }
+
+    .modal-content {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: var(--border-radius);
+      width: 100%;
+      max-width: 450px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+      text-align: center;
+      animation: fadeInScale 0.3s ease;
+      position: relative;
+    }
+
+    @keyframes fadeInScale {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .modal-header {
+      margin-bottom: 1.5rem;
+    }
+
+    .modal-title {
+      font-size: 1.5rem;
+      color: var(--primary-dark);
+      margin-bottom: 0.5rem;
+    }
+
+    .modal-subtitle {
+      color: var(--text-light);
+      font-size: 0.9rem;
+    }
+
+    .modal-ideas {
+      text-align: left;
+      margin: 1.5rem 0;
+      max-height: 300px;
+      overflow-y: auto;
+      padding-right: 0.5rem;
+    }
+
+    .idea-item {
+      padding: 0.8rem 0;
+      border-bottom: 1px solid #eee;
+      transition: var(--transition);
+    }
+
+    .idea-item:last-child {
+      border-bottom: none;
+    }
+
+    .idea-item a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 500;
+      display: block;
+      transition: var(--transition);
+    }
+
+    .idea-item a:hover {
+      color: var(--primary-dark);
+      transform: translateX(5px);
+    }
+
+    .modal-actions {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .btn {
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 500;
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn-primary {
+      background: var(--primary-color);
+      color: var(--white);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .btn-secondary {
+      background: var(--white);
+      color: var(--text-dark);
+      border: 1px solid #ddd;
+    }
+
+    .btn-secondary:hover {
+      background: #f5f5f5;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .status-indicator {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #ccc;
+      margin-right: 8px;
+    }
+
+    .status-active {
+      background: #4caf50;
+      box-shadow: 0 0 8px #4caf50;
+    }
+
+    .controls {
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0;
+        width: 100%;
+        max-width: 800px;
+        }
+
+    #camera-toggle {
+        min-width: 180px;
+        }
+
+    .video-placeholder {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background: #333;
+        font-size: 1.2rem;
+        }
+
+    @media (max-width: 768px) {
+      .dashboard {
+        padding: 1rem;
+      }
+      
+      .counter {
+        font-size: 1rem;
+      }
+      
+      .modal-content {
+        padding: 1.5rem;
+      }
+      
+      .modal-actions {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      
+      .btn {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        padding: 1rem;
+      }
+      
+      .dashboard {
+        margin-bottom: 1.5rem;
+      }
+      
+      .video-container {
+        margin-bottom: 1.5rem;
+      }
+      
+      .modal-content {
+        padding: 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>EcoVision</h1>
+    <p>Object Detection with Reuse Suggestions</p>
+  </header>
+
+  <main>
+    <div class="dashboard">
+      <h2>Sustainability Impact</h2>
+      <div class="counter" id="dashboard">0</div>
+      <!-- <div class="counter-label">Items Reused</div> -->
+    </div>
+
+    <div class="video-container">
+        <video id="webcam" autoplay playsinline style="display: none;"></video>
+        <canvas id="canvas"></canvas>
+        <div id="video-placeholder" class="video-placeholder">
+          Camera is currently off. Click "Start Camera" to begin.
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="camera-toggle" class="btn btn-primary">Start Camera</button>
+        <button id="switch-camera" class="btn btn-secondary">Switch Camera</button>
+      </div>
+      
+
+  </main>
+
+  <!-- Modal for reuse ideas -->
+  <div id="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-title">Reuse Ideas</h3>
+        <p class="modal-subtitle">Creative ways to repurpose this item</p>
+      </div>
+      <div class="modal-ideas" id="modal-ideas"></div>
+      <div class="modal-actions">
+        <button id="mark-reused-btn" class="btn btn-primary">Mark as Reused</button>
+        <button id="modal-close-btn" class="btn btn-secondary">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts at the end of body -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', updateDashboard);
+  </script>
+</body>
+</html>

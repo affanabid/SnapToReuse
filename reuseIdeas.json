@@ -1,0 +1,249 @@
+{
+  "person": [
+    { "title": "Turn old clothes into reusable shopping bags", "link": "https://www.youtube.com/watch?v=gQXHc97okKo" },
+    { "title": "Create a scarecrow from old clothing", "link": "https://www.youtube.com/watch?v=SPsCBJDLxFs" }
+  ],
+  "bicycle": [
+    { "title": "Upcycle bike parts into wall art", "link": "https://www.instructables.com/Bike-Taxidermy-wall-hooks/" },
+    { "title": "Turn a bike wheel into a clock", "link": "https://katebeavis.com/diy-tutorial-how-to-make-a-bike-wheel-clock/" }
+  ],
+  "car": [
+    { "title": "Convert car parts into furniture", "link": "https://www.carcrazyfurniture.com/post/ways-to-transform-used-car-parts-into-home-d%C3%A9cor" },
+    { "title": "Make a car tire planter", "link": "https://www.youtube.com/watch?v=bsR0vRT4ydE" }
+  ],
+  "motorcycle": [
+    { "title": "Turn a gas tank into a bookshelf", "link": "https://www.youtube.com/watch?v=b00mPFsgIZw" },
+    { "title": "Motorcycle chain bottle opener", "link": "https://www.resourcerevival.com/products/bike-chain-bottle-opener-1" }
+  ],
+  "airplane": [
+    { "title": "Aircraft parts repurposed as furniture", "link": "https://www.treehugger.com/airplane-parts-repurposed-furniture-4859255" }
+  ],
+  "bus": [
+    { "title": "School bus tiny home conversion", "link": "https://www.youtube.com/watch?v=Zx6Im9V8JjY" }
+  ],
+  "train": [
+    { "title": "Railroad track garden edging", "link": "https://www.gardeningknowhow.com/garden-how-to/projects/railroad-tie-garden-edging.htm" }
+  ],
+  "truck": [
+    { "title": "Flatbed truck to mobile garden", "link": "https://www.hunker.com/13770336/how-to-make-a-mobile-garden-from-a-truck-bed" }
+  ],
+  "boat": [
+    { "title": "Boat turned into a garden planter", "link": "https://www.gardeningknowhow.com/special/containers/boat-garden-containers.htm" },
+    { "title": "Old canoe bookshelf", "link": "https://www.apartmenttherapy.com/canoe-bookshelf-239418" }
+  ],
+  "traffic light": [
+    { "title": "Traffic light lamp", "link": "https://www.instructables.com/Traffic-Light-Lamp/" }
+  ],
+  "fire hydrant": [
+    { "title": "Fire hydrant garden sculpture", "link": "https://www.pinterest.com/pin/550138551980391437/" }
+  ],
+  "stop sign": [
+    { "title": "Stop sign wall clock", "link": "https://www.instructables.com/Stop-Sign-Wall-Clock/" }
+  ],
+  "parking meter": [
+    { "title": "Parking meter piggy bank", "link": "https://www.etsy.com/listing/1082609196/upcycled-motorcycle-chain-bottle-opener" }
+  ],
+  "bench": [
+    { "title": "Bench to garden planter conversion", "link": "https://www.hometalk.com/diy/outdoor/furniture/repurpose-an-old-bench-into-a-garden-planter-40061246" }
+  ],
+  "bird": [
+    { "title": "Create birdhouses from recycled materials", "link": "https://www.thespruce.com/recycled-bird-house-projects-386713" }
+  ],
+  "cat": [
+    { "title": "DIY cat furniture from old items", "link": "https://www.youtube.com/watch?v=8KWj7VbWQeU" }
+  ],
+  "dog": [
+    { "title": "Upcycled dog bed ideas", "link": "https://www.diyncrafts.com/39104/repurpose/19-creative-diy-dog-beds-repurposed-household-items" }
+  ],
+  "horse": [
+    { "title": "Horseshoe crafts and decor", "link": "https://diyprojects.com/16-diy-horseshoe-projects-decor/" }
+  ],
+  "sheep": [
+    { "title": "Repurpose wool sweaters", "link": "https://www.thesprucecrafts.com/upcycle-wool-sweaters-4121913" }
+  ],
+  "cow": [
+    { "title": "Cowhide rug restoration", "link": "https://www.hunker.com/13422811/how-to-clean-a-cowhide-rug" }
+  ],
+  "elephant": [
+    { "title": "Upcycled elephant decor", "link": "https://www.pinterest.com/search/pins/?q=upcycled%20elephant%20decor" }
+  ],
+  "bear": [
+    { "title": "Teddy bear repair and repurpose", "link": "https://www.wikihow.com/Repair-a-Teddy-Bear" }
+  ],
+  "zebra": [
+    { "title": "Zebra print upcycling projects", "link": "https://www.pinterest.com/search/pins/?q=zebra%20print%20upcycling" }
+  ],
+  "giraffe": [
+    { "title": "Giraffe-themed upcycled crafts", "link": "https://www.pinterest.com/search/pins/?q=giraffe%20upcycled%20crafts" }
+  ],
+  "backpack": [
+    { "title": "Turn old backpacks into new bags", "link": "https://www.youtube.com/watch?v=2QOjr_SH7wI" }
+  ],
+  "umbrella": [
+    { "title": "Upcycle broken umbrellas", "link": "https://www.upcyclethat.com/umbrella-upcycling/" }
+  ],
+  "handbag": [
+    { "title": "Repurpose old purses", "link": "https://www.diyncrafts.com/39104/repurpose/19-creative-ways-to-repurpose-old-purses" }
+  ],
+  "tie": [
+    { "title": "Necktie upcycling projects", "link": "https://www.thesprucecrafts.com/upcycle-neckties-4121924" }
+  ],
+  "suitcase": [
+    { "title": "Vintage suitcase furniture", "link": "https://www.diyncrafts.com/39104/repurpose/19-creative-ways-to-repurpose-old-suitcases" }
+  ],
+  "frisbee": [
+    { "title": "Frisbee planters", "link": "https://www.upcyclethat.com/frisbee-upcycling/" }
+  ],
+  "skis": [
+    { "title": "Ski chair upcycling", "link": "https://www.instructables.com/Adirondack-Chair-Made-From-Old-Skis/" }
+  ],
+  "snowboard": [
+    { "title": "Snowboard shelves", "link": "https://www.pinterest.com/pin/550138551980391437/" }
+  ],
+  "sports ball": [
+    { "title": "Sports ball planters", "link": "https://www.upcyclethat.com/sports-ball-upcycling/" }
+  ],
+  "kite": [
+    { "title": "Kite material crafts", "link": "https://www.pinterest.com/search/pins/?q=kite%20repurposing" }
+  ],
+  "baseball bat": [
+    { "title": "Baseball bat lamp", "link": "https://www.instructables.com/Baseball-Bat-Lamp/" }
+  ],
+  "baseball glove": [
+    { "title": "Baseball glove decor", "link": "https://www.pinterest.com/search/pins/?q=baseball%20glove%20repurposing" }
+  ],
+  "skateboard": [
+    { "title": "Skateboard furniture", "link": "https://www.homedit.com/skateboard-furniture/" }
+  ],
+  "surfboard": [
+    { "title": "Surfboard shelves", "link": "https://www.pinterest.com/pin/550138551980391437/" }
+  ],
+  "tennis racket": [
+    { "title": "Tennis racket mirror", "link": "https://www.instructables.com/Tennis-Racket-Mirror/" }
+  ],
+  "bottle": [
+    { "title": "Plastic bottle planters", "link": "https://www.youtube.com/watch?v=DEKLB872_5s" },
+    { "title": "Glass bottle garden edging", "link": "https://www.gardeningknowhow.com/special/spaces/bottle-edging-garden-borders.htm" }
+  ],
+  "wine glass": [
+    { "title": "Wine glass candles", "link": "https://www.youtube.com/watch?v=8KWj7VbWQeU" }
+  ],
+  "cup": [
+    { "title": "Mug garden planters", "link": "https://www.gardeningknowhow.com/special/containers/repurposed-coffee-mug-planters.htm" }
+  ],
+  "fork": [
+    { "title": "Fork garden markers", "link": "https://www.hometalk.com/diy/grow/plants/q-fork-garden-markers-40605596" }
+  ],
+  "knife": [
+    { "title": "Knife handle crafts", "link": "https://www.pinterest.com/search/pins/?q=knife%20handle%20crafts" }
+  ],
+  "spoon": [
+    { "title": "Spoon wind chimes", "link": "https://www.instructables.com/Upcycled-Spoon-Wind-Chime/" }
+  ],
+  "bowl": [
+    { "title": "Bowl pendant light", "link": "https://www.instructables.com/Bowl-Pendant-Light/" }
+  ],
+  "banana": [
+    { "title": "Banana peel fertilizer", "link": "https://www.gardeningknowhow.com/composting/ingredients/banana-peels-compost.htm" }
+  ],
+  "apple": [
+    { "title": "Apple core composting", "link": "https://www.gardeningknowhow.com/composting/ingredients/composting-apple-cores.htm" }
+  ],
+  "sandwich": [
+    { "title": "Food scrap gardening", "link": "https://www.gardeningknowhow.com/composting/ingredients/composting-kitchen-scraps.htm" }
+  ],
+  "orange": [
+    { "title": "Orange peel crafts", "link": "https://www.diyncrafts.com/39104/repurpose/19-creative-ways-to-repurpose-orange-peels" }
+  ],
+  "broccoli": [
+    { "title": "Regrow broccoli from scraps", "link": "https://www.gardeningknowhow.com/edible/vegetables/broccoli/regrowing-broccoli.htm" }
+  ],
+  "carrot": [
+    { "title": "Regrow carrot tops", "link": "https://www.gardeningknowhow.com/edible/vegetables/carrot/regrowing-carrot-tops.htm" }
+  ],
+  "hot dog": [
+    { "title": "Composting meat scraps", "link": "https://www.gardeningknowhow.com/composting/ingredients/composting-meat-scraps.htm" }
+  ],
+  "pizza": [
+    { "title": "Composting pizza boxes", "link": "https://www.gardeningknowhow.com/composting/ingredients/composting-pizza-boxes.htm" }
+  ],
+  "donut": [
+    { "title": "Donut box crafts", "link": "https://www.pinterest.com/search/pins/?q=donut%20box%20crafts" }
+  ],
+  "cake": [
+    { "title": "Cake stand repurposing", "link": "https://www.pinterest.com/search/pins/?q=cake%20stand%20repurposing" }
+  ],
+  "chair": [
+    { "title": "Chair planter conversion", "link": "https://www.gardeningknowhow.com/garden-how-to/projects/chair-planter-ideas.htm" },
+    { "title": "Chair upcycling projects", "link": "https://www.upcyclethat.com/chair-upcycling/" }
+  ],
+  "couch": [
+    { "title": "Sofa pet bed conversion", "link": "https://www.hometalk.com/diy/repurpose/furniture/turn-an-old-couch-into-a-dog-bed-40061246" }
+  ],
+  "potted plant": [
+    { "title": "Repotting and plant propagation", "link": "https://www.gardeningknowhow.com/houseplants/hpgen/repotting-houseplants.htm" }
+  ],
+  "bed": [
+    { "title": "Bed frame garden trellis", "link": "https://www.gardeningknowhow.com/garden-how-to/projects/repurposed-bed-frame-trellis.htm" }
+  ],
+  "dining table": [
+    { "title": "Table to desk conversion", "link": "https://www.hometalk.com/diy/repurpose/furniture/repurpose-an-old-table-into-a-desk-40061246" }
+  ],
+  "toilet": [
+    { "title": "Toilet planter upcycling", "link": "https://www.gardeningknowhow.com/special/containers/repurposed-toilet-planter.htm" }
+  ],
+  "tv": [
+    { "title": "Old TV aquarium conversion", "link": "https://www.instructables.com/Old-TV-Turned-Into-Aquarium/" }
+  ],
+  "laptop": [
+    { "title": "Laptop parts upcycling", "link": "https://www.instructables.com/Upcycled-Laptop-Part-Jewelry/" }
+  ],
+  "mouse": [
+    { "title": "Computer mouse crafts", "link": "https://www.pinterest.com/search/pins/?q=computer%20mouse%20crafts" }
+  ],
+  "remote": [
+    { "title": "Remote control art", "link": "https://www.pinterest.com/search/pins/?q=remote%20control%20art" }
+  ],
+  "keyboard": [
+    { "title": "Keyboard key crafts", "link": "https://www.thesprucecrafts.com/upcycle-keyboard-keys-4121926" }
+  ],
+  "cell phone": [
+    { "title": "Old phone recycling ideas", "link": "https://www.gazelle.com/thehorn/2013/08/07/10-ways-to-reuse-recycle-your-old-cell-phone/" }
+  ],
+  "microwave": [
+    { "title": "Microwave birdhouse", "link": "https://www.instructables.com/Microwave-Birdhouse/" }
+  ],
+  "oven": [
+    { "title": "Oven to storage conversion", "link": "https://www.hometalk.com/diy/repurpose/appliances/repurpose-an-old-oven-into-storage-40061246" }
+  ],
+  "toaster": [
+    { "title": "Toaster planter", "link": "https://www.upcyclethat.com/toaster-upcycling/" }
+  ],
+  "sink": [
+    { "title": "Sink garden planter", "link": "https://www.gardeningknowhow.com/special/containers/repurposed-sink-garden.htm" }
+  ],
+  "refrigerator": [
+    { "title": "Fridge to storage conversion", "link": "https://www.hometalk.com/diy/repurpose/appliances/repurpose-an-old-refrigerator-40061246" }
+  ],
+  "book": [
+    { "title": "Book page crafts", "link": "https://www.thesprucecrafts.com/upcycle-book-pages-4121925" }
+  ],
+  "clock": [
+    { "title": "Clock face crafts", "link": "https://www.pinterest.com/search/pins/?q=clock%20face%20crafts" }
+  ],
+  "vase": [
+    { "title": "Vase upcycling projects", "link": "https://www.upcyclethat.com/vase-upcycling/" }
+  ],
+  "scissors": [
+    { "title": "Scissors garden markers", "link": "https://www.hometalk.com/diy/grow/plants/q-scissors-garden-markers-40605596" }
+  ],
+  "teddy bear": [
+    { "title": "Teddy bear repair", "link": "https://www.wikihow.com/Repair-a-Teddy-Bear" }
+  ],
+  "hair drier": [
+    { "title": "Hairdryer crafts", "link": "https://www.pinterest.com/search/pins/?q=hairdryer%20crafts" }
+  ],
+  "toothbrush": [
+    { "title": "Toothbrush cleaning tools", "link": "https://www.upcyclethat.com/toothbrush-upcycling/" }
+  ]
+}
