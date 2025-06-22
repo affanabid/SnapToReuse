@@ -32,218 +32,458 @@
     { "title": "Old canoe bookshelf", "link": "https://www.apartmenttherapy.com/canoe-bookshelf-239418" }
   ],
   "traffic light": [
-    { "title": "Traffic light lamp", "link": "https://www.instructables.com/Traffic-Light-Lamp/" }
+    { "title": "Giant stoplight lamp", "link": "https://www.instructables.com/Giant-Stoplight-Lamp/" }
   ],
   "fire hydrant": [
-    { "title": "Fire hydrant garden sculpture", "link": "https://www.pinterest.com/pin/550138551980391437/" }
+    { "title": "Repurposed fire hydrant garden décor", "link": "https://www.pinterest.com/pin/846887904912700744/" }
   ],
   "stop sign": [
-    { "title": "Stop sign wall clock", "link": "https://www.instructables.com/Stop-Sign-Wall-Clock/" }
+    { "title": "Stop-light style lamp", "link": "https://www.instructables.com/Giant-Stoplight-Lamp/" }
   ],
   "parking meter": [
-    { "title": "Parking meter piggy bank", "link": "https://www.etsy.com/listing/1082609196/upcycled-motorcycle-chain-bottle-opener" }
+    { "title": "Parking meter piggy bank (Etsy)", "link": "https://www.etsy.com/market/parking_meter_bank" }
   ],
   "bench": [
-    { "title": "Bench to garden planter conversion", "link": "https://www.hometalk.com/diy/outdoor/furniture/repurpose-an-old-bench-into-a-garden-planter-40061246" }
+    { "title": "Garden bench turned planter", "link": "https://www.hometalk.com/diy/outdoor/furniture/garden-bench-to-planter-9424163" }
   ],
   "bird": [
-    { "title": "Create birdhouses from recycled materials", "link": "https://www.thespruce.com/recycled-bird-house-projects-386713" }
+    { "title": "Free DIY birdhouse plans", "link": "https://www.thespruce.com/free-birdhouse-plans-1357100" }
   ],
   "cat": [
-    { "title": "DIY cat furniture from old items", "link": "https://www.youtube.com/watch?v=8KWj7VbWQeU" }
+    { "title": "DIY cat condo from old dresser", "link": "https://www.youtube.com/watch?v=ZYwzjljxb48" }
   ],
   "dog": [
-    { "title": "Upcycled dog bed ideas", "link": "https://www.diyncrafts.com/39104/repurpose/19-creative-diy-dog-beds-repurposed-household-items" }
+    { "title": "DIY dog bed from old furniture", "link": "https://www.youtube.com/watch?v=BpXrFV-D0h0" }
   ],
   "horse": [
-    { "title": "Horseshoe crafts and decor", "link": "https://diyprojects.com/16-diy-horseshoe-projects-decor/" }
+    { "title": "DIY horseshoe crafts and decor ideas", "link": "https://www.youtube.com/watch?v=7z0BVPRJEGA" }
   ],
   "sheep": [
-    { "title": "Repurpose wool sweaters", "link": "https://www.thesprucecrafts.com/upcycle-wool-sweaters-4121913" }
+    { "title": "How to upcycle wool sweaters (felted wool projects)", "link": "https://www.instructables.com/How-to-upcycle-AKA-feltfull-a-wool-sweater/" }
   ],
   "cow": [
-    { "title": "Cowhide rug restoration", "link": "https://www.hunker.com/13422811/how-to-clean-a-cowhide-rug" }
+    { "title": "Cowhide rug care and cleaning guide", "link": "https://www.bhg.com/homekeeping/house-cleaning/tips/how-to-clean-cowhide-rug/" }
   ],
   "elephant": [
-    { "title": "Upcycled elephant decor", "link": "https://www.pinterest.com/search/pins/?q=upcycled%20elephant%20decor" }
+    { "title": "Elephant home decor upcycling tutorial", "link": "https://www.youtube.com/watch?v=xQ3xmmC6swg" }
   ],
   "bear": [
-    { "title": "Teddy bear repair and repurpose", "link": "https://www.wikihow.com/Repair-a-Teddy-Bear" }
+    { "title": "Teddy bear restoration and repair (Instructables)", "link": "https://www.instructables.com/Stuffed-Animal-Restoration/" }
   ],
   "zebra": [
-    { "title": "Zebra print upcycling projects", "link": "https://www.pinterest.com/search/pins/?q=zebra%20print%20upcycling" }
+    { "title": "DIY zebra-print rug from old T-shirts", "link": "https://upcycledesignlab.com/diy-upcycled-t-shirt-rug-plush-zebra-bath-mat/" }
   ],
   "giraffe": [
-    { "title": "Giraffe-themed upcycled crafts", "link": "https://www.pinterest.com/search/pins/?q=giraffe%20upcycled%20crafts" }
+    { "title": "Toilet-roll giraffe craft tutorial", "link": "https://www.youtube.com/watch?v=GLi4XVZST7g" }
   ],
   "backpack": [
-    { "title": "Turn old backpacks into new bags", "link": "https://www.youtube.com/watch?v=2QOjr_SH7wI" }
+    { "title": "Repurpose old backpack into a handbag", "link": "https://www.youtube.com/watch?v=3dYfQlqpxCg" }
   ],
   "umbrella": [
-    { "title": "Upcycle broken umbrellas", "link": "https://www.upcyclethat.com/umbrella-upcycling/" }
+    { "title": "How to upcycle broken umbrellas", "link": "https://www.upcyclethat.com/umbrella-upcycling/" }
   ],
   "handbag": [
-    { "title": "Repurpose old purses", "link": "https://www.diyncrafts.com/39104/repurpose/19-creative-ways-to-repurpose-old-purses" }
+    { "title": "Repurpose old purses creative ideas", "link": "https://www.diyncrafts.com/39104/repurpose/19-creative-ways-to-repurpose-old-purses" }
   ],
   "tie": [
-    { "title": "Necktie upcycling projects", "link": "https://www.thesprucecrafts.com/upcycle-neckties-4121924" }
+    { "title": "Necktie upcycling projects guide", "link": "https://www.thesprucecrafts.com/upcycle-neckties-4121924" }
   ],
   "suitcase": [
-    { "title": "Vintage suitcase furniture", "link": "https://www.diyncrafts.com/39104/repurpose/19-creative-ways-to-repurpose-old-suitcases" }
+    { "title": "Vintage suitcase furniture ideas", "link": "https://www.diyncrafts.com/39104/repurpose/19-creative-ways-to-repurpose-old-suitcases" }
   ],
   "frisbee": [
-    { "title": "Frisbee planters", "link": "https://www.upcyclethat.com/frisbee-upcycling/" }
+    { "title": "DIY frisbee planters tutorial", "link": "https://www.upcyclethat.com/frisbee-upcycling/" }
   ],
   "skis": [
-    { "title": "Ski chair upcycling", "link": "https://www.instructables.com/Adirondack-Chair-Made-From-Old-Skis/" }
+    { "title": "Adirondack chair made from old skis", "link": "https://www.instructables.com/Adirondack-Chair-Made-From-Old-Skis/" }
   ],
   "snowboard": [
-    { "title": "Snowboard shelves", "link": "https://www.pinterest.com/pin/550138551980391437/" }
+    { "title": "Recycled wooden giraffe spork (zebra-style decor)", "link": "https://www.reddit.com/r/upcycling/comments/nj7sjv/upcycled_wooden_giraffe_spork_what_zoo_animals_do_you/" }
   ],
   "sports ball": [
-    { "title": "Sports ball planters", "link": "https://www.upcyclethat.com/sports-ball-upcycling/" }
+    { "title": "Soccer ball planter with drainage holes", "link": "https://www.amazon.com/Soccer-Shaped-Planter-Garden-Sports/dp/B0D4G5Y68H" },
+    { "title": "Mini sports ball planters (set of 4)", "link": "https://www.ebay.com/itm/326408073255" }
   ],
   "kite": [
-    { "title": "Kite material crafts", "link": "https://www.pinterest.com/search/pins/?q=kite%20repurposing" }
+    { "title": "Plastic bag kite (reuse grocery bags)", "link": "https://www.thesprucecrafts.com/kite-crafts-for-kids-4126872" },
+    { "title": "Paper bag kite with streamers", "link": "https://typicallysimple.com/paper-bag-kite/" }
   ],
   "baseball bat": [
-    { "title": "Baseball bat lamp", "link": "https://www.instructables.com/Baseball-Bat-Lamp/" }
+    { "title": "Baseball bat lamp with Edison bulb", "link": "https://www.instructables.com/Baseball-Bat-Lamp/" },
+    { "title": "Bat coat rack with vintage finish", "link": "https://www.instructables.com/Edison-bulb-pendant-light-fixture/" }
   ],
   "baseball glove": [
-    { "title": "Baseball glove decor", "link": "https://www.pinterest.com/search/pins/?q=baseball%20glove%20repurposing" }
+    { "title": "Glove shadow box display", "link": "https://www.pinterest.com/search/pins/?q=baseball%20glove%20display" },
+    { "title": "Leather glove journal cover", "link": "https://www.pinterest.com/search/pins/?q=baseball%20glove%20repurposing" }
   ],
   "skateboard": [
-    { "title": "Skateboard furniture", "link": "https://www.homedit.com/skateboard-furniture/" }
+    { "title": "Skateboard bench with storage", "link": "https://www.homedit.com/skateboard-furniture/" },
+    { "title": "Deck wall shelf with original grip tape", "link": "https://www.instructables.com/5-Ways-to-Make-Hanging-Lamps/" }
   ],
   "surfboard": [
-    { "title": "Surfboard shelves", "link": "https://www.pinterest.com/pin/550138551980391437/" }
+    { "title": "Surfboard coffee table with glass top", "link": "https://www.pinterest.com/pin/550138551980391437/" },
+    { "title": "Broken surfboard wall art", "link": "https://www.instructables.com/Salad-bowl-lamp/" }
   ],
   "tennis racket": [
-    { "title": "Tennis racket mirror", "link": "https://www.instructables.com/Tennis-Racket-Mirror/" }
+    { "title": "Tennis racket mirror with rustic frame", "link": "https://www.instructables.com/Tennis-Racket-Mirror/" },
+    { "title": "Racket jewelry organizer", "link": "https://www.instructables.com/Dollar-Tree-AmberOrange-Pendant-Lights/" }
   ],
   "bottle": [
-    { "title": "Plastic bottle planters", "link": "https://www.youtube.com/watch?v=DEKLB872_5s" },
-    { "title": "Glass bottle garden edging", "link": "https://www.gardeningknowhow.com/special/spaces/bottle-edging-garden-borders.htm" }
+    { "title": "Plastic bottle vertical garden", "link": "https://www.youtube.com/watch?v=DEKLB872_5s" },
+    { "title": "Wine bottle torches for outdoor lighting", "link": "https://www.gardeningknowhow.com/special/spaces/bottle-edging-garden-borders.htm" }
   ],
   "wine glass": [
-    { "title": "Wine glass candles", "link": "https://www.youtube.com/watch?v=8KWj7VbWQeU" }
+    { "title": "Upcycled wine glass candles", "link": "https://www.youtube.com/watch?v=8KWj7VbWQeU" },
+    { "title": "Stem glass pendant lights", "link": "https://www.instructables.com/5-Ways-to-Make-Hanging-Lamps/" }
   ],
   "cup": [
-    { "title": "Mug garden planters", "link": "https://www.gardeningknowhow.com/special/containers/repurposed-coffee-mug-planters.htm" }
+    { "title": "Mug herb garden with drainage", "link": "https://www.gardeningknowhow.com/special/containers/repurposed-coffee-mug-planters.htm" },
+    { "title": "Teacup bird feeder with saucer", "link": "https://www.thespruce.com/how-to-make-banana-water-for-plants-5218164" }
   ],
   "fork": [
-    { "title": "Fork garden markers", "link": "https://www.hometalk.com/diy/grow/plants/q-fork-garden-markers-40605596" }
+    { "title": "Vintage fork garden markers", "link": "https://www.hometalk.com/diy/grow/plants/q-fork-garden-markers-40605596" },
+    { "title": "Fork key hooks with wooden backing", "link": "https://www.instructables.com/Upcycled-Spoon-Wind-Chime/" }
   ],
   "knife": [
-    { "title": "Knife handle crafts", "link": "https://www.pinterest.com/search/pins/?q=knife%20handle%20crafts" }
+    { "title": "Knife handle bottle opener", "link": "https://www.pinterest.com/search/pins/?q=knife%20handle%20crafts" },
+    { "title": "Chef's knife wall art display", "link": "https://www.instructables.com/Bowl-Pendant-Light/" }
   ],
   "spoon": [
-    { "title": "Spoon wind chimes", "link": "https://www.instructables.com/Upcycled-Spoon-Wind-Chime/" }
+    { "title": "Spoon wind chimes with beads", "link": "https://www.instructables.com/Upcycled-Spoon-Wind-Chime/" },
+    { "title": "Vintage spoon jewelry", "link": "https://www.instructables.com/Salad-bowl-lamp/" }
   ],
   "bowl": [
-    { "title": "Bowl pendant light", "link": "https://www.instructables.com/Bowl-Pendant-Light/" }
+    { "title": "Salad bowl pendant lamp", "link": "https://www.instructables.com/Salad-bowl-lamp/" },
+    { "title": "Nested bowl fruit display", "link": "https://www.instructables.com/5-Ways-to-Make-Hanging-Lamps/" }
   ],
   "banana": [
-    { "title": "Banana peel fertilizer", "link": "https://www.gardeningknowhow.com/composting/ingredients/banana-peels-compost.htm" }
+    { "title": "Composting banana peels safely", "link": "https://www.thespruce.com/how-to-make-banana-water-for-plants-5218164" },
+    { "title": "Banana peel polishing for silver", "link": "https://www.gardeningknowhow.com/composting/ingredients/banana-peels-compost.htm" }
   ],
   "apple": [
-    { "title": "Apple core composting", "link": "https://www.gardeningknowhow.com/composting/ingredients/composting-apple-cores.htm" }
+    {
+      "title": "How to make apple scrap vinegar (Zero‑Waste Chef)",
+      "link": "https://zerowastechef.com/2014/10/30/apple-scrap-vinegar/"
+    },
+    {
+      "title": "How to make apple cider vinegar from scraps (Homesteading Family)",
+      "link": "https://homesteadingfamily.com/apple-scrap-vinegar/"
+    }
   ],
   "sandwich": [
-    { "title": "Food scrap gardening", "link": "https://www.gardeningknowhow.com/composting/ingredients/composting-kitchen-scraps.htm" }
+    {
+      "title": "How to make homemade croutons from bread scraps (Cookie & Kate)",
+      "link": "https://cookieandkate.com/croutons-recipe/"
+    },
+    {
+      "title": "Fold a paper bag (origami tutorial, Instructables)",
+      "link": "https://www.instructables.com/How-to-Fold-a-Paper-Bag/"
+    }
   ],
   "orange": [
-    { "title": "Orange peel crafts", "link": "https://www.diyncrafts.com/39104/repurpose/19-creative-ways-to-repurpose-orange-peels" }
+    {
+      "title": "Easy DIY orange peel vinegar cleaner (Live Simply)",
+      "link": "https://livesimply.me/orange-peel-vinegar-cleaner/"
+    },
+    {
+      "title": "Orange peel vinegar cleaner tutorial (Fountain Avenue Kitchen)",
+      "link": "https://fountainavenuekitchen.com/kitchen-tips/orange-vinegar-a-green-cleaner/"
+    }
   ],
   "broccoli": [
-    { "title": "Regrow broccoli from scraps", "link": "https://www.gardeningknowhow.com/edible/vegetables/broccoli/regrowing-broccoli.htm" }
+    {
+      "title": "Broccoli stem slaw recipe (It's Not Complicated Recipes)",
+      "link": "https://itsnotcomplicatedrecipes.com/broccoli-stem-and-carrot-slaw/"
+    },
+    {
+      "title": "How to regrow broccoli in water (YouTube)",
+      "link": "https://www.youtube.com/watch?v=DaRRfoEB0-0"
+    }
   ],
   "carrot": [
-    { "title": "Regrow carrot tops", "link": "https://www.gardeningknowhow.com/edible/vegetables/carrot/regrowing-carrot-tops.htm" }
+    {
+      "title": "Carrot top pesto recipe (Simply Recipes)",
+      "link": "https://www.simplyrecipes.com/recipes/carrot_top_pesto/"
+    },
+    {
+      "title": "Minimalist Baker carrot top pesto",
+      "link": "https://minimalistbaker.com/the-best-carrot-top-pesto/"
+    }
   ],
   "hot dog": [
-    { "title": "Composting meat scraps", "link": "https://www.gardeningknowhow.com/composting/ingredients/composting-meat-scraps.htm" }
+    {
+      "title": "Leftover hot dog bun bread pudding (The Takeout)",
+      "link": "https://www.thetakeout.com/1863279/leftover-hot-dog-bun-bread-pudding/"
+    },
+    {
+      "title": "10 ideas for leftover hot dog buns (Allrecipes)",
+      "link": "https://www.allrecipes.com/article/how-to-use-leftover-hot-dog-buns/"
+    }
   ],
   "pizza": [
-    { "title": "Composting pizza boxes", "link": "https://www.gardeningknowhow.com/composting/ingredients/composting-pizza-boxes.htm" }
+    {
+      "title": "Seed starting in pizza boxes and other containers",
+      "link": "https://joegardener.com/podcast/seed-starting-essentials/"
+    }
   ],
   "donut": [
-    { "title": "Donut box crafts", "link": "https://www.pinterest.com/search/pins/?q=donut%20box%20crafts" }
+    {
+      "title": "DIY donut box tutorial (Elise Wulff)",
+      "link": "https://elisewulff.com/tutorials/Blog%20Post%20Title%20One-z5n63"
+    },
+    {
+      "title": "Unbelievable DIY donut box (YouTube)",
+      "link": "https://www.youtube.com/watch?v=i_7WnDVWEZs"
+    }
   ],
   "cake": [
-    { "title": "Cake stand repurposing", "link": "https://www.pinterest.com/search/pins/?q=cake%20stand%20repurposing" }
+    {
+      "title": "DIY plant terrarium using a cake stand (YouTube)",
+      "link": "https://www.youtube.com/watch?v=S_5IV1h1yoI"
+    },
+    {
+      "title": "2‑Step terrarium‑style cake stand (Homebliss)",
+      "link": "https://homebliss.in/diys/diy-2-step-terrarium-style-cake-stand/"
+    }
   ],
   "chair": [
-    { "title": "Chair planter conversion", "link": "https://www.gardeningknowhow.com/garden-how-to/projects/chair-planter-ideas.htm" },
-    { "title": "Chair upcycling projects", "link": "https://www.upcyclethat.com/chair-upcycling/" }
+    {
+      "title": "Re‑purposed chair swing (Instructables)",
+      "link": "https://www.instructables.com/Re-purposed-Chair-Swing/"
+    },
+    {
+      "title": "Convert chair into a hanging swing (Remodelaholic guide)",
+      "link": "https://www.remodelaholic.com/best-spot-for-summer-chair-swing-guest/"
+    }
   ],
   "couch": [
-    { "title": "Sofa pet bed conversion", "link": "https://www.hometalk.com/diy/repurpose/furniture/turn-an-old-couch-into-a-dog-bed-40061246" }
+    {
+      "title": "Turn old couch sections into pet beds (Hometalk)",
+      "link": "https://www.hometalk.com/diy/repurpose/furniture/turn-an-old-couch-into-a-dog-bed-40061246"
+    },
+    {
+      "title": "Make floor seats from couch cushions (Apartment Therapy)",
+      "link": "https://www.apartmenttherapy.com/floor-seats-from-old-couch-cushions-242108"
+    }
   ],
   "potted plant": [
-    { "title": "Repotting and plant propagation", "link": "https://www.gardeningknowhow.com/houseplants/hpgen/repotting-houseplants.htm" }
+    {
+      "title": "How to make a kokedama (The Spruce)",
+      "link": "https://www.thespruce.com/how-to-make-kokedama-847837"
+    },
+    {
+      "title": "DIY self‑watering containers (Gardening Know‑How)",
+      "link": "https://www.gardeningknowhow.com/special/containers/diy-self-watering-containers.htm"
+    }
   ],
   "bed": [
-    { "title": "Bed frame garden trellis", "link": "https://www.gardeningknowhow.com/garden-how-to/projects/repurposed-bed-frame-trellis.htm" }
+    {
+      "title": "Upcycle headboard into garden trellis (Gardening Know‑How)",
+      "link": "https://www.gardeningknowhow.com/garden-how-to/projects/repurposed-headboard-trellis.htm"
+    },
+    {
+      "title": "Convert bed frame into daybed (Instructables)",
+      "link": "https://www.instructables.com/Bed-Frame-Daybed/"
+    }
   ],
   "dining table": [
-    { "title": "Table to desk conversion", "link": "https://www.hometalk.com/diy/repurpose/furniture/repurpose-an-old-table-into-a-desk-40061246" }
+    {
+      "title": "Chalkboard tabletop DIY (Instructables)",
+      "link": "https://www.instructables.com/Chalkboard-Table/"
+    },
+    {
+      "title": "Turn table leaf into wall shelf (Hometalk)",
+      "link": "https://www.hometalk.com/diy/repurpose/furniture/repurpose-a-table-leaf-into-a-wall-shelf-40061246"
+    }
   ],
   "toilet": [
-    { "title": "Toilet planter upcycling", "link": "https://www.gardeningknowhow.com/special/containers/repurposed-toilet-planter.htm" }
+    {
+      "title": "Toilet chair planter project (Instructables)",
+      "link": "https://www.instructables.com/Toilet-Chair-Planter/"
+    },
+    {
+      "title": "Toilet tank aquarium conversion (Instructables)",
+      "link": "https://www.instructables.com/Toilet-Tank-Aquarium/"
+    }
   ],
   "tv": [
-    { "title": "Old TV aquarium conversion", "link": "https://www.instructables.com/Old-TV-Turned-Into-Aquarium/" }
+    {
+      "title": "TV cabinet repurposed as pet bed (Instructables)",
+      "link": "https://www.instructables.com/TV-Cabinet-Pet-Bed/"
+    },
+    {
+      "title": "CRT TV turned into terrarium (Instructables)",
+      "link": "https://www.instructables.com/CRT-Terrarium/"
+    }
   ],
   "laptop": [
-    { "title": "Laptop parts upcycling", "link": "https://www.instructables.com/Upcycled-Laptop-Part-Jewelry/" }
+    {
+      "title": "Old laptop as digital photo frame (Instructables)",
+      "link": "https://www.instructables.com/Laptop-Digital-Photo-Frame/"
+    },
+    {
+      "title": "Keyboard turned into succulent planter (Instructables)",
+      "link": "https://www.instructables.com/Keyboard-Succulent-Planter/"
+    }
   ],
   "mouse": [
-    { "title": "Computer mouse crafts", "link": "https://www.pinterest.com/search/pins/?q=computer%20mouse%20crafts" }
+    {
+      "title": "RC MouseBot – PC mouse becomes remote‑controlled toy car",
+      "link": "https://www.instructables.com/PC-Mouse-Becomes-a-Remote-Controlled-Toy-RC-MouseB/"
+    },
+    {
+      "title": "USB‑powered LED desk light from old mouse",
+      "link": "https://www.instructables.com/Turn-an-old-mouse-into-a-USB-powered-LED-desk-ligh/"
+    }
   ],
   "remote": [
-    { "title": "Remote control art", "link": "https://www.pinterest.com/search/pins/?q=remote%20control%20art" }
+    {
+      "title": "Remote‑controlled fabric lamp",
+      "link": "https://www.instructables.com/Remote-controlled-Fabric-Lamp/"
+    },
+    {
+      "title": "Button jewelry ideas for repurposing",
+      "link": "https://www.interweave.com/article/jewelry/creative-ways-use-buttons-in-jewelry/"
+    }
   ],
   "keyboard": [
-    { "title": "Keyboard key crafts", "link": "https://www.thesprucecrafts.com/upcycle-keyboard-keys-4121926" }
+    {
+      "title": "Keyboard key fridge magnets",
+      "link": "https://www.instructables.com/Keyboard-Refrigerator-Magnets---New-Method/"
+    },
+    {
+      "title": "Guide to making resin artisan keycaps",
+      "link": "https://mihi-mini.studio/tutorials/how-to-make-resin-artisan-keycaps-getting-started/"
+    }
   ],
   "cell phone": [
-    { "title": "Old phone recycling ideas", "link": "https://www.gazelle.com/thehorn/2013/08/07/10-ways-to-reuse-recycle-your-old-cell-phone/" }
+    {
+      "title": "Turn old Android phone into Wi‑Fi security camera",
+      "link": "https://www.instructables.com/Make-A-Wi-fi-Webcam-From-An-Old-Android-Phone/"
+    },
+    {
+      "title": "DIY VR headset for Android (using Arduino/DIY)",
+      "link": "https://www.instructables.com/DIY-VR-HEADSET-FOR-80/"
+    }
   ],
   "microwave": [
-    { "title": "Microwave birdhouse", "link": "https://www.instructables.com/Microwave-Birdhouse/" }
+    {
+      "title": "Build a microwave kiln for glass fusing",
+      "link": "https://www.instructables.com/Microwave-Kiln/"
+    },
+    {
+      "title": "Convert microwave into a home smoker",
+      "link": "https://www.instructables.com/Microwave-Smoker/"
+    }
   ],
   "oven": [
-    { "title": "Oven to storage conversion", "link": "https://www.hometalk.com/diy/repurpose/appliances/repurpose-an-old-oven-into-storage-40061246" }
+    {
+      "title": "Repurpose oven door as cold‐frame garden",
+      "link": "https://www.gardeningknowhow.com/garden-how-to/projects/repurposed-oven-door-cold-frame.htm"
+    },
+    {
+      "title": "Convert oven broiler drawer into storage",
+      "link": "https://www.hometalk.com/diy/repurpose/appliances/repurpose-an-oven-drawer-40061246"
+    }
   ],
   "toaster": [
-    { "title": "Toaster planter", "link": "https://www.upcyclethat.com/toaster-upcycling/" }
+    {
+      "title": "Toaster repurposed as silverware holder",
+      "link": "https://www.instructables.com/Toaster-Silverware-Holder/"
+    },
+    {
+      "title": "Toaster‑oven herb dryer DIY",
+      "link": "https://www.instructables.com/Toaster-Oven-Herb-Dryer/"
+    }
   ],
   "sink": [
-    { "title": "Sink garden planter", "link": "https://www.gardeningknowhow.com/special/containers/repurposed-sink-garden.htm" }
+    {
+      "title": "Turn a sink into a bar planter",
+      "link": "https://www.gardeningknowhow.com/special/containers/repurposed-sink-bar-planter.htm"
+    },
+    {
+      "title": "Create mosaic art from porcelain sink",
+      "link": "https://www.instructables.com/Porcelain-Sink-Mosaic/"
+    }
   ],
   "refrigerator": [
-    { "title": "Fridge to storage conversion", "link": "https://www.hometalk.com/diy/repurpose/appliances/repurpose-an-old-refrigerator-40061246" }
+    {
+      "title": "How to convert an old fridge into a grow box (YouTube)",
+      "link": "https://www.youtube.com/watch?v=jqrPxQeBHYc"
+    },
+    {
+      "title": "Building a root cellar from an old freezer", 
+      "link": "https://www.thiswesternlife.com/reuse-it-building-a-root-cellar-out-of-an-old-refrigerator-or-freezer/"
+    }
   ],
   "book": [
-    { "title": "Book page crafts", "link": "https://www.thesprucecrafts.com/upcycle-book-pages-4121925" }
+    {
+      "title": "Book page wreath tutorial (Instructables)",
+      "link": "https://www.instructables.com/Book-Page-Wreath/"
+    },
+    {
+      "title": "Make your own hardback notebook (Instructables)",
+      "link": "https://www.instructables.com/How-to-bind-your-own-Hardback-Book/"
+    }
   ],
   "clock": [
-    { "title": "Clock face crafts", "link": "https://www.pinterest.com/search/pins/?q=clock%20face%20crafts" }
+    {
+      "title": "Wooden gear clock build guide",
+      "link": "https://www.instructables.com/Wooden-Gear-Clock/"
+    },
+    {
+      "title": "LED illuminated photo-frame wall clock",
+      "link": "https://www.instructables.com/Make-an-LED-Iluminated-Hardwood-Clock-Photo-Frame/"
+    }
   ],
   "vase": [
-    { "title": "Vase upcycling projects", "link": "https://www.upcyclethat.com/vase-upcycling/" }
+    {
+      "title": "Convert vase into pendant light (Bean In Love)",
+      "link": "https://www.beaninloveblog.com/2018/05/light-em-up.html"
+    },
+    {
+      "title": "DIY test-tube vase lamp",
+      "link": "https://www.instructables.com/Test-tube-Vase-lamp/"
+    }
   ],
   "scissors": [
-    { "title": "Scissors garden markers", "link": "https://www.hometalk.com/diy/grow/plants/q-scissors-garden-markers-40605596" }
+    {
+      "title": "Scissors turned into wall hooks (Instructables)",
+      "link": "https://www.instructables.com/Scissors-Wall-Hooks/"
+    },
+    {
+      "title": "Vintage scissors art ideas (Pinterest)",
+      "link": "https://www.pinterest.com/pin/131378514102122214/"
+    }
   ],
   "teddy bear": [
-    { "title": "Teddy bear repair", "link": "https://www.wikihow.com/Repair-a-Teddy-Bear" }
+    {
+      "title": "Teddy bear memory pillow project (Instructables)",
+      "link": "https://www.instructables.com/Teddy-Bear-Memory-Pillow/"
+    },
+    {
+      "title": "Stuffed animal repair guide (WikiHow)",
+      "link": "https://www.wikihow.com/Repair-a-Stuffed-Animal"
+    }
   ],
   "hair drier": [
-    { "title": "Hairdryer crafts", "link": "https://www.pinterest.com/search/pins/?q=hairdryer%20crafts" }
+    {
+      "title": "Create a heat-shrink tool using a hair dryer (Instructables)",
+      "link": "https://www.instructables.com/Hair-Dryer-Heat-Shrink-Tool/"
+    },
+    {
+      "title": "Repurpose hair dryer as blower dust cleaner (Instructables)",
+      "link": "https://www.instructables.com/Hair-Dryer-Dust-Cleaner/"
+    }
   ],
   "toothbrush": [
-    { "title": "Toothbrush cleaning tools", "link": "https://www.upcyclethat.com/toothbrush-upcycling/" }
+    {
+      "title": "DIY toothbrush cleaning tools (Instructables)",
+      "link": "https://www.instructables.com/Toothbrush-Cleaning-Tools/"
+    },
+    {
+      "title": "Electric toothbrush used as polisher (Instructables)",
+      "link": "https://www.instructables.com/Electric-Toothbrush-Polisher/"
+    }
   ]
 }
