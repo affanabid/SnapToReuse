@@ -8,7 +8,7 @@
 A smart sustainability web app that uses real-time object detection to suggest creative ways to **reuse** everyday items. Powered by **TensorFlow.js**, EcoVision helps you turn trash into treasure through visual recognition and curated DIY ideas.
 
 <p align="center">
-  <img src="ecovision.png" width="120" alt="EcoVision Logo" />
+  <img src="ecovision.png" alt="EcoVision Logo" />
 </p>
 
 ---
