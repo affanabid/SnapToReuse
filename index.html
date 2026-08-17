@@ -1,25 +1,41 @@
-<!-- index.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EcoVision: Object Detection & Reuse Ideas</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <title>SnapToReuse — Object Recognition & Sustainability Console</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tabler Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.36.0/tabler-icons.min.css">
+
   <style>
     :root {
-      --primary-color: #2e7d32;
-      --primary-dark: #1b5e20;
-      --primary-light: #81c784;
-      --secondary-color: #ff8f00;
-      --background: #f5f7fa;
-      --text-dark: #263238;
-      --text-light: #546e7a;
-      --white: #ffffff;
-      --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      --border-radius: 12px;
-      --transition: all 0.3s ease;
+      --bg-void: #0A0F0D;
+      --bg-surface: #121815;
+      --bg-elevated: #1B231F;
+      --border-hairline: #2B3630;
+
+      --text-primary: #E9F1EC;
+      --text-muted: #8FA098;
+
+      --accent-scan: #4CFFB0;     /* Mint: Vision system & chrome */
+      --accent-impact: #C6FF5C;   /* Lime: Human sustainability layer */
+      --accent-amber: #FFC857;    /* Loading / Warning state */
+      --accent-alert: #FF6B5E;    /* Error / Alert state */
+
+      --font-display: 'Space Grotesk', sans-serif;
+      --font-body: 'Manrope', sans-serif;
+      --font-mono: 'IBM Plex Mono', monospace;
+
+      --radius-functional: 6px;
+      --radius-floating: 14px;
+      --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-smooth: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     * {
@@ -29,377 +45,837 @@
     }
 
     body {
-      font-family: 'Roboto', sans-serif;
-      background: var(--background);
-      color: var(--text-dark);
-      line-height: 1.6;
+      font-family: var(--font-body);
+      background: var(--bg-void);
+      color: var(--text-primary);
+      line-height: 1.5;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
     }
 
+    /* Accessibility Focus States */
+    :focus-visible {
+      outline: 2px solid var(--accent-scan);
+      outline-offset: 2px;
+    }
+
+    /* Header Toolbar */
     header {
-      background: var(--primary-color);
-      color: var(--white);
-      padding: 1.5rem 1rem;
-      text-align: center;
-      box-shadow: var(--shadow);
-      position: relative;
-      z-index: 10;
+      background: var(--bg-surface);
+      border-bottom: 1px solid var(--border-hairline);
+      padding: 0.75rem 1.25rem;
+      position: sticky;
+      top: 0;
+      z-index: 40;
     }
 
-    header h1 {
-      font-size: clamp(1.5rem, 3vw, 2rem);
-      font-weight: 500;
-      margin-bottom: 0.5rem;
-    }
-
-    header p {
-      font-size: clamp(0.8rem, 2vw, 1rem);
-      opacity: 0.9;
-      font-weight: 300;
-    }
-
-    main {
-      flex: 1;
+    .header-content {
+      max-width: 1280px;
+      margin: 0 auto;
       display: flex;
-      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .brand-logo {
+      width: 28px;
+      height: 28px;
+      border: 1px solid var(--accent-scan);
+      border-radius: var(--radius-functional);
+      display: flex;
       align-items: center;
       justify-content: center;
-      padding: 2rem 1rem;
-      width: 100%;
+      color: var(--accent-scan);
+      font-size: 1.1rem;
+      background: rgba(76, 255, 176, 0.05);
     }
 
-    .dashboard {
-      background: var(--white);
-      border-radius: var(--border-radius);
-      padding: 1.5rem;
-      margin-bottom: 2rem;
+    .brand-title {
+      font-family: var(--font-display);
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: -0.02em;
+    }
+
+    .status-pill {
+      background: var(--bg-void);
+      border: 1px solid var(--border-hairline);
+      border-radius: 9999px;
+      padding: 0.35rem 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .status-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--text-muted);
+      transition: var(--transition-fast);
+      position: relative;
+    }
+
+    .status-dot.loading {
+      background: var(--accent-amber);
+      box-shadow: 0 0 8px var(--accent-amber);
+      animation: pulse 1.5s infinite;
+    }
+
+    .status-dot.ready {
+      background: var(--accent-scan);
+      box-shadow: 0 0 8px var(--accent-scan);
+    }
+
+    .status-dot.active {
+      background: var(--accent-scan);
+      box-shadow: 0 0 10px var(--accent-scan);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.15); }
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    /* Asymmetric Console Layout */
+    main.console-layout {
+      flex: 1;
+      max-width: 1280px;
       width: 100%;
-      max-width: 800px;
-      box-shadow: var(--shadow);
-      text-align: center;
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem;
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 1.5rem;
+    }
+
+    /* Camera Viewport Column */
+    .camera-column {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      gap: 1rem;
     }
 
-    .dashboard h2 {
-      font-size: 1.5rem;
-      color: var(--primary-dark);
-      margin-bottom: 1rem;
-    }
-
-    /* .counter {
-      font-size: 2.5rem;
-      font-weight: 700;
-      color: var(--primary-color);
-      margin-bottom: 0.5rem;
-    } */
-
-    .counter {
-      font-size: 1rem;
-      color: var(--text-light);
-      text-transform: uppercase;
-      letter-spacing: 1px;
+    .viewport-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-hairline);
+      border-radius: var(--radius-functional);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
     }
 
     .video-container {
       position: relative;
       width: 100%;
-      max-width: 800px;
       aspect-ratio: 4 / 3;
-      border-radius: var(--border-radius);
+      background: #000000;
       overflow: hidden;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-      background: #000;
-      margin-bottom: 2rem;
     }
-
-    #video-placeholder {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        background: #333;
-        font-size: 0.9rem;
-        }
-
-    #webcam.active {
-        display: block;
-        }
-
-    #video-placeholder.hidden {
-        display: none;
-        }
 
     video, canvas {
       position: absolute;
-      top: 0;
-      left: 0;
+      inset: 0;
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
 
     canvas {
-      z-index: 2;
+      z-index: 10;
+      cursor: crosshair;
     }
 
-    #modal {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: rgba(0, 0, 0, 0.7);
-      display: none;
+    /* Viewfinder Reticle Corner Brackets */
+    .reticle-bracket {
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      border-color: var(--accent-scan);
+      border-style: solid;
+      pointer-events: none;
+      z-index: 15;
+      opacity: 0.85;
+    }
+
+    .reticle-bracket.tl { top: 12px; left: 12px; border-width: 2px 0 0 2px; }
+    .reticle-bracket.tr { top: 12px; right: 12px; border-width: 2px 2px 0 0; }
+    .reticle-bracket.bl { bottom: 12px; left: 12px; border-width: 0 0 2px 2px; }
+    .reticle-bracket.br { bottom: 12px; right: 12px; border-width: 0 2px 2px 0; }
+
+    /* Video Placeholder */
+    .video-placeholder {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 1rem;
-      box-sizing: border-box;
-      z-index: 1000;
-      backdrop-filter: blur(5px);
+      gap: 1rem;
+      background: var(--bg-surface);
+      z-index: 5;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .placeholder-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border-hairline);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      color: var(--text-muted);
+    }
+
+    .placeholder-text {
+      font-family: var(--font-mono);
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      max-width: 320px;
+    }
+
+    /* Bottom HUD Strip */
+    .hud-strip {
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-hairline);
+      padding: 0.5rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .hud-metrics {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .hud-item {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .hud-value {
+      color: var(--accent-scan);
+      font-weight: 500;
+    }
+
+    /* Floating Glass Control Dock */
+    .floating-dock {
+      position: absolute;
+      bottom: 2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(27, 35, 31, 0.75);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--border-hairline);
+      border-radius: var(--radius-floating);
+      padding: 0.4rem 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      z-index: 20;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    .dock-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      background: transparent;
+      border: none;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: var(--transition-fast);
+    }
+
+    .dock-btn:hover:not(:disabled) {
+      background: rgba(233, 241, 236, 0.1);
+      color: var(--accent-scan);
+    }
+
+    .dock-btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    .dock-divider {
+      width: 1px;
+      height: 20px;
+      background: var(--border-hairline);
+    }
+
+    /* Buttons */
+    .btn {
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius-functional);
+      font-family: var(--font-body);
+      font-size: 0.8125rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: var(--transition-fast);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+    }
+
+    .btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .btn-primary {
+      background: var(--accent-scan);
+      color: var(--bg-void);
+    }
+
+    .btn-primary:hover:not(:disabled) {
+      background: #3ce69d;
+    }
+
+    .btn-impact {
+      background: var(--accent-impact);
+      color: var(--bg-void);
+    }
+
+    .btn-impact:hover:not(:disabled) {
+      background: #b5ee4e;
+    }
+
+    .btn-secondary {
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border-color: var(--border-hairline);
+    }
+
+    .btn-secondary:hover:not(:disabled) {
+      background: var(--bg-elevated);
+      border-color: var(--text-muted);
+    }
+
+    /* Impact Dashboard Rail Column */
+    .dashboard-rail {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .rail-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-hairline);
+      border-radius: var(--radius-functional);
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .rail-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .rail-label {
+      font-family: var(--font-mono);
+      font-size: 0.6875rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .impact-display {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .impact-numeral {
+      font-family: var(--font-display);
+      font-size: 2.25rem;
+      font-weight: 700;
+      color: var(--accent-impact);
+      line-height: 1;
+    }
+
+    .impact-subtext {
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+    }
+
+    /* Terminal Recent Log */
+    .terminal-log {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+
+    .log-entry {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: var(--text-muted);
+      padding: 0.35rem 0.5rem;
+      border-radius: 4px;
+      background: var(--bg-void);
+      border: 1px solid rgba(43, 54, 48, 0.5);
+    }
+
+    .log-time {
+      color: var(--text-muted);
+      opacity: 0.7;
+    }
+
+    .log-item {
+      color: var(--accent-scan);
+      font-weight: 500;
+    }
+
+    /* DIY Drawer Panel Sheet (#modal) */
+    #modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(10, 15, 13, 0.65);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      display: none;
+      align-items: center;
+      justify-content: flex-end;
+      z-index: 100;
+      transition: opacity 0.28ms ease;
     }
 
     .modal-content {
-      background: var(--white);
-      padding: 2rem;
-      border-radius: var(--border-radius);
+      background: var(--bg-elevated);
+      border-left: 1px solid var(--border-hairline);
+      border-radius: var(--radius-floating) 0 0 var(--radius-floating);
       width: 100%;
-      max-width: 450px;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-      text-align: center;
-      animation: fadeInScale 0.3s ease;
-      position: relative;
+      max-width: 440px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 1.75rem;
+      gap: 1.25rem;
+      box-shadow: -8px 0 24px rgba(0, 0, 0, 0.5);
+      animation: drawerSlideIn 0.28s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
-    @keyframes fadeInScale {
-      from { opacity: 0; transform: scale(0.95); }
-      to { opacity: 1; transform: scale(1); }
+    @keyframes drawerSlideIn {
+      from { transform: translateX(100%); }
+      to { transform: translateX(0); }
     }
 
     .modal-header {
-      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-hairline);
+      padding-bottom: 1rem;
+    }
+
+    .modal-title-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
     }
 
     .modal-title {
-      font-size: 1.5rem;
-      color: var(--primary-dark);
-      margin-bottom: 0.5rem;
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      text-transform: capitalize;
     }
 
     .modal-subtitle {
-      color: var(--text-light);
-      font-size: 0.9rem;
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+    }
+
+    .modal-close-btn {
+      background: transparent;
+      border: 1px solid var(--border-hairline);
+      border-radius: var(--radius-functional);
+      color: var(--text-muted);
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: var(--transition-fast);
+    }
+
+    .modal-close-btn:hover {
+      color: var(--text-primary);
+      border-color: var(--text-muted);
     }
 
     .modal-ideas {
-      text-align: left;
-      margin: 1.5rem 0;
-      max-height: 300px;
+      flex: 1;
       overflow-y: auto;
-      padding-right: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      padding-right: 0.25rem;
     }
 
     .idea-item {
-      padding: 0.8rem 0;
-      border-bottom: 1px solid #eee;
-      transition: var(--transition);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-hairline);
+      border-radius: var(--radius-functional);
+      padding: 0.875rem 1rem;
+      transition: var(--transition-fast);
     }
 
-    .idea-item:last-child {
-      border-bottom: none;
+    .idea-item:hover {
+      border-color: var(--accent-scan);
+      background: rgba(76, 255, 176, 0.04);
     }
 
     .idea-item a {
-      color: var(--primary-color);
+      color: var(--text-primary);
       text-decoration: none;
+      font-size: 0.875rem;
       font-weight: 500;
-      display: block;
-      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
-    .idea-item a:hover {
-      color: var(--primary-dark);
-      transform: translateX(5px);
+    .idea-item a::after {
+      content: '→';
+      color: var(--accent-scan);
+      font-family: var(--font-mono);
+      font-weight: 600;
+    }
+
+    .idea-item.sarcastic-item {
+      background: rgba(255, 200, 87, 0.08);
+      border-color: rgba(255, 200, 87, 0.25);
+    }
+
+    .sarcastic-quote {
+      color: var(--accent-amber);
+      font-size: 0.875rem;
+      font-weight: 500;
+      line-height: 1.45;
     }
 
     .modal-actions {
       display: flex;
-      justify-content: center;
-      gap: 1rem;
-      margin-top: 1.5rem;
+      gap: 0.75rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-hairline);
     }
 
-    .btn {
-      padding: 0.8rem 1.5rem;
-      border: none;
-      border-radius: 50px;
-      cursor: pointer;
-      font-size: 1rem;
-      font-weight: 500;
-      transition: var(--transition);
-      display: inline-flex;
-      align-items: center;
+    .modal-actions .btn {
+      flex: 1;
       justify-content: center;
     }
 
-    .btn-primary {
-      background: var(--primary-color);
-      color: var(--white);
-    }
-
-    .btn-primary:hover {
-      background: var(--primary-dark);
-      transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    }
-
-    .btn-secondary {
-      background: var(--white);
-      color: var(--text-dark);
-      border: 1px solid #ddd;
-    }
-
-    .btn-secondary:hover {
-      background: #f5f5f5;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .status-indicator {
-      display: inline-block;
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      background: #ccc;
-      margin-right: 8px;
-    }
-
-    .status-active {
-      background: #4caf50;
-      box-shadow: 0 0 8px #4caf50;
-    }
-
-    .controls {
-        display: flex;
-        justify-content: center;
-        margin: 1rem 0;
-        width: 100%;
-        max-width: 800px;
-        }
-
-    #camera-toggle {
-        min-width: 180px;
-        }
-
-    .video-placeholder {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        background: #333;
-        font-size: 0.9rem;
-        }
-
-    @media (max-width: 768px) {
-      .dashboard {
-        padding: 1rem;
+    /* Media Queries for Mobile & Phone Sizes */
+    @media (max-width: 900px) {
+      main.console-layout {
+        grid-template-columns: 1fr;
+        padding: 1rem 0.75rem;
+        gap: 1rem;
       }
-      
-      .counter {
+
+      .video-container {
+        max-height: 58vh;
+      }
+
+      .floating-dock {
+        bottom: 0.75rem;
+        padding: 0.3rem 0.6rem;
+      }
+
+      .dock-btn {
+        width: 32px;
+        height: 32px;
         font-size: 1rem;
       }
-      
+
+      #modal {
+        align-items: flex-end;
+      }
+
       .modal-content {
-        padding: 1.5rem;
+        max-width: 100%;
+        height: 75vh;
+        max-height: 85vh;
+        padding: 1.25rem 1rem;
+        border-left: none;
+        border-top: 1px solid var(--border-hairline);
+        border-radius: 16px 16px 0 0;
+        animation: sheetSlideUp 0.28s cubic-bezier(0.16, 1, 0.3, 1);
       }
-      
-      .modal-actions {
-        flex-direction: column;
-        gap: 0.5rem;
-      }
-      
-      .btn {
-        width: 100%;
+
+      @keyframes sheetSlideUp {
+        from { transform: translateY(100%); }
+        to { transform: translateY(0); }
       }
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 600px) {
       header {
+        padding: 0.5rem 0.75rem;
+      }
+
+      .header-content {
+        gap: 0.5rem;
+      }
+
+      .brand-title {
+        font-size: 1rem;
+      }
+
+      .status-pill {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.6875rem;
+      }
+
+      .btn {
+        padding: 0.4rem 0.75rem;
+        font-size: 0.75rem;
+      }
+
+      .hud-strip {
+        font-size: 0.6875rem;
+        padding: 0.4rem 0.6rem;
+      }
+
+      .hud-metrics {
+        gap: 0.75rem;
+      }
+
+      .rail-card {
         padding: 1rem;
       }
-      
-      .dashboard {
-        margin-bottom: 1.5rem;
+
+      .impact-numeral {
+        font-size: 1.85rem;
       }
-      
-      .video-container {
-        margin-bottom: 1.5rem;
+
+      .terminal-log {
+        max-height: 140px;
       }
-      
+    }
+
+    @media (max-width: 380px) {
+      .header-content {
+        flex-wrap: wrap;
+      }
+
+      .status-pill {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+      }
+    }
+
+    /* Reduced Motion */
+    @media (prefers-reduced-motion: reduce) {
+      *, ::before, ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+
       .modal-content {
-        padding: 1.25rem;
+        animation: opacityFade 0.12s linear !important;
+      }
+
+      @keyframes opacityFade {
+        from { opacity: 0; }
+        to { opacity: 1; }
       }
     }
   </style>
 </head>
 <body>
+  <!-- Header Toolbar -->
   <header>
-    <h1>SnapToReuse</h1>
-    <p>Object Detection with Reuse Suggestions</p>
+    <div class="header-content">
+      <div class="brand-group">
+        <div class="brand-logo">
+          <i class="ti ti-scan"></i>
+        </div>
+        <span class="brand-title">SnapToReuse</span>
+      </div>
+
+      <div class="status-pill">
+        <div id="status-dot" class="status-dot loading"></div>
+        <span id="status-text">loading model...</span>
+      </div>
+
+      <div class="header-actions">
+        <button id="camera-toggle" class="btn btn-primary" disabled>
+          <i class="ti ti-camera"></i>
+          <span>Start Camera</span>
+        </button>
+      </div>
+    </div>
   </header>
 
-  <main>
-    <div class="dashboard">
-      <h2>Sustainability Impact</h2>
-      <div class="counter" id="dashboard">0</div>
-      <!-- <div class="counter-label">Items Reused</div> -->
+  <!-- Console Layout -->
+  <main class="console-layout">
+    <!-- Camera Column -->
+    <div class="camera-column">
+      <div class="viewport-card">
+        <div class="video-container" id="video-container">
+          <video id="webcam" autoplay playsinline style="display: none;"></video>
+          <canvas id="canvas"></canvas>
+          
+          <!-- Static Corner Brackets -->
+          <div class="reticle-bracket tl"></div>
+          <div class="reticle-bracket tr"></div>
+          <div class="reticle-bracket bl"></div>
+          <div class="reticle-bracket br"></div>
+
+          <!-- Video Placeholder -->
+          <div id="video-placeholder" class="video-placeholder">
+            <div class="placeholder-icon">
+              <i class="ti ti-camera-off"></i>
+            </div>
+            <div class="placeholder-text" id="placeholder-msg">
+              Initializing AI vision engine... Please wait.
+            </div>
+          </div>
+
+          <!-- Floating Glass Control Dock -->
+          <div class="floating-dock">
+            <button id="switch-camera" class="dock-btn" title="Switch Camera (Front/Back)" disabled>
+              <i class="ti ti-refresh"></i>
+            </button>
+            <div class="dock-divider"></div>
+            <button id="pause-toggle" class="dock-btn" title="Pause Detection">
+              <i class="ti ti-player-pause"></i>
+            </button>
+            <button id="sound-toggle" class="dock-btn" title="Toggle Sound Feedback">
+              <i class="ti ti-volume"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Bottom HUD Strip -->
+        <div class="hud-strip">
+          <div class="hud-metrics">
+            <div class="hud-item">
+              <span>FPS:</span>
+              <span class="hud-value" id="fps-count">12</span>
+            </div>
+            <div class="hud-item">
+              <span>OBJECTS:</span>
+              <span class="hud-value" id="object-count">0</span>
+            </div>
+          </div>
+          <div class="hud-item">
+            <span>STATE:</span>
+            <span class="hud-value" id="engine-state">STANDBY</span>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="video-container">
-        <video id="webcam" autoplay playsinline style="display: none;"></video>
-        <canvas id="canvas"></canvas>
-        <div id="video-placeholder" class="video-placeholder">
-          Camera is currently off. Click "Start Camera" to begin.
+    <!-- Impact Dashboard Rail Column -->
+    <div class="dashboard-rail">
+      <div class="rail-card">
+        <div class="rail-header">
+          <span class="rail-label">IMPACT COUNTER</span>
+          <i class="ti ti-leaf" style="color: var(--accent-impact);"></i>
+        </div>
+        <div class="impact-display">
+          <div class="impact-numeral" id="dashboard">0</div>
+          <div class="impact-subtext">items upcycled & saved</div>
         </div>
       </div>
 
-      <div class="controls">
-        <button id="camera-toggle" class="btn btn-primary">Start Camera</button>
-        <button id="switch-camera" class="btn btn-secondary">Switch Camera</button>
+      <div class="rail-card">
+        <div class="rail-header">
+          <span class="rail-label">RECENT DETECTIONS</span>
+          <i class="ti ti-terminal" style="color: var(--text-muted);"></i>
+        </div>
+        <div class="terminal-log" id="recent-log">
+          <div class="log-entry">
+            <span class="log-time">--:--</span>
+            <span class="log-item">System ready. Point camera at items.</span>
+          </div>
+        </div>
       </div>
-      
-
+    </div>
   </main>
 
-  <!-- Modal for reuse ideas -->
+  <!-- DIY Drawer Panel Sheet (#modal) -->
   <div id="modal">
     <div class="modal-content">
       <div class="modal-header">
-        <h3 class="modal-title" id="modal-title">Reuse Ideas</h3>
-        <p class="modal-subtitle">Creative ways to repurpose this item</p>
+        <div class="modal-title-group">
+          <h3 class="modal-title" id="modal-title">Reuse Ideas</h3>
+          <p class="modal-subtitle">Creative ways to upcycle and repurpose this object</p>
+        </div>
+        <button id="modal-close-btn" class="modal-close-btn" title="Close Drawer">
+          <i class="ti ti-x"></i>
+        </button>
       </div>
+
       <div class="modal-ideas" id="modal-ideas"></div>
+
       <div class="modal-actions">
-        <button id="mark-reused-btn" class="btn btn-primary">Mark as Reused</button>
-        <button id="modal-close-btn" class="btn btn-secondary">Close</button>
+        <button id="mark-reused-btn" class="btn btn-impact">
+          <i class="ti ti-circle-check"></i>
+          <span>Mark as upcycled</span>
+        </button>
       </div>
     </div>
   </div>
 
-  <!-- Scripts at the end of body -->
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
   <script src="script.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', updateDashboard);
-  </script>
 </body>
 </html>

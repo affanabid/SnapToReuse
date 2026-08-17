@@ -1,7 +1,11 @@
 {
   "person": [
-    { "title": "Turn old clothes into reusable shopping bags", "link": "https://www.youtube.com/watch?v=gQXHc97okKo" },
-    { "title": "Create a scarecrow from old clothing", "link": "https://www.youtube.com/watch?v=SPsCBJDLxFs" }
+    { "title": "⚠️ Non-recyclable. Sub-lease for passive rental income.", "link": "" },
+    { "title": "Convert into a human coat rack or decorative living room statue.", "link": "" },
+    { "title": "Train to clean the house and brew coffee. 100% zero-waste workforce.", "link": "" },
+    { "title": "Runs on coffee & snacks. Put to work in garden weeding.", "link": "" },
+    { "title": "Biodegradable (eventually), but returns & store credit are prohibited by law.", "link": "" },
+    { "title": "Have you tried turning them off and on again?", "link": "" }
   ],
   "bicycle": [
     { "title": "Upcycle bike parts into wall art", "link": "https://www.instructables.com/Bike-Taxidermy-wall-hooks/" },
@@ -16,89 +20,116 @@
     { "title": "Motorcycle chain bottle opener", "link": "https://www.resourcerevival.com/products/bike-chain-bottle-opener-1" }
   ],
   "airplane": [
-    { "title": "Aircraft parts repurposed as furniture", "link": "https://www.treehugger.com/airplane-parts-repurposed-furniture-4859255" }
+    { "title": "Aircraft parts repurposed as sustainable furniture", "link": "https://www.treehugger.com/airplane-parts-repurposed-furniture-4859255" },
+    { "title": "Turn airplane aluminum scraps into wall art and clocks", "link": "https://www.instructables.com/Airplane-Scrap-Metal-Clock/" }
   ],
   "bus": [
-    { "title": "School bus tiny home conversion", "link": "https://www.youtube.com/watch?v=Zx6Im9V8JjY" }
+    { "title": "School bus tiny home conversion guide (Skoolie)", "link": "https://www.youtube.com/watch?v=Zx6Im9V8JjY" },
+    { "title": "Repurpose bus seats into retro home workshop chairs", "link": "https://www.instructables.com/Bus-Seat-Office-Chair/" }
   ],
   "train": [
-    { "title": "Railroad track garden edging", "link": "https://www.gardeningknowhow.com/garden-how-to/projects/railroad-tie-garden-edging.htm" }
+    { "title": "Railroad track steel garden edging & timber ties", "link": "https://www.gardeningknowhow.com/garden-how-to/projects/railroad-tie-garden-edging.htm" },
+    { "title": "Vintage train lantern battery-powered LED conversion", "link": "https://www.instructables.com/Vintage-Railroad-Lantern-LED-Conversion/" }
   ],
   "truck": [
-    { "title": "Flatbed truck to mobile garden", "link": "https://www.hunker.com/13770336/how-to-make-a-mobile-garden-from-a-truck-bed" }
+    { "title": "Flatbed truck to mobile garden planter bed", "link": "https://www.hunker.com/13770336/how-to-make-a-mobile-garden-from-a-truck-bed" },
+    { "title": "Truck tailgate upcycled into a rustic porch bench", "link": "https://www.instructables.com/Truck-Tailgate-Bench/" }
   ],
   "boat": [
     { "title": "Boat turned into a garden planter", "link": "https://www.gardeningknowhow.com/special/containers/boat-garden-containers.htm" },
     { "title": "Old canoe bookshelf", "link": "https://www.apartmenttherapy.com/canoe-bookshelf-239418" }
   ],
   "traffic light": [
-    { "title": "Giant stoplight lamp", "link": "https://www.instructables.com/Giant-Stoplight-Lamp/" }
+    { "title": "Giant stoplight standing floor lamp tutorial", "link": "https://www.instructables.com/Giant-Stoplight-Lamp/" },
+    { "title": "Traffic signal lens wall sconces & ambient lights", "link": "https://www.pinterest.com/search/pins/?q=traffic%20light%20lamp" }
   ],
   "fire hydrant": [
-    { "title": "Repurposed fire hydrant garden décor", "link": "https://www.pinterest.com/pin/846887904912700744/" }
+    { "title": "Repurposed fire hydrant garden hose spool & decor", "link": "https://www.pinterest.com/pin/846887904912700744/" },
+    { "title": "Cast-iron fire hydrant garden water feature conversion", "link": "https://www.instructables.com/Fire-Hydrant-Fountain/" }
   ],
   "stop sign": [
-    { "title": "Stop-light style lamp", "link": "https://www.instructables.com/Giant-Stoplight-Lamp/" }
+    { "title": "Upcycled metal stop sign coffee tabletop", "link": "https://www.instructables.com/Street-Sign-Table/" },
+    { "title": "Traffic sign wall coat rack with vintage hooks", "link": "https://www.pinterest.com/search/pins/?q=stop%20sign%20furniture" }
   ],
   "parking meter": [
-    { "title": "Parking meter piggy bank (Etsy)", "link": "https://www.etsy.com/market/parking_meter_bank" }
+    { "title": "Parking meter coin bank upcycling project", "link": "https://www.etsy.com/market/parking_meter_bank" },
+    { "title": "Vintage parking meter desk lamp & nightlight", "link": "https://www.instructables.com/Parking-Meter-Lamp/" }
   ],
   "bench": [
-    { "title": "Garden bench turned planter", "link": "https://www.hometalk.com/diy/outdoor/furniture/garden-bench-to-planter-9424163" }
+    { "title": "Garden bench turned raised planter bed", "link": "https://www.hometalk.com/diy/outdoor/furniture/garden-bench-to-planter-9424163" },
+    { "title": "Refurbish weathered bench wood with eco-friendly stain", "link": "https://www.instructables.com/Refurbishing-a-Park-Bench/" }
   ],
   "bird": [
-    { "title": "Free DIY birdhouse plans", "link": "https://www.thespruce.com/free-birdhouse-plans-1357100" }
+    { "title": "Build a recycled bottle bird seed feeder", "link": "https://www.thespruce.com/free-birdhouse-plans-1357100" },
+    { "title": "DIY pinecone & peanut butter bird feeders for garden wildlife", "link": "https://www.thespruce.com/pine-cone-bird-feeder-1875681" }
   ],
   "cat": [
-    { "title": "DIY cat condo from old dresser", "link": "https://www.youtube.com/watch?v=ZYwzjljxb48" }
+    { "title": "⚠️ High-maintenance companion. Will judge your upcycling skills silently.", "link": "" },
+    { "title": "DIY cat condo & scratching post from old sweater and cardboard", "link": "https://www.youtube.com/watch?v=ZYwzjljxb48" }
   ],
   "dog": [
-    { "title": "DIY dog bed from old furniture", "link": "https://www.youtube.com/watch?v=BpXrFV-D0h0" }
+    { "title": "100% organic tail-wagging companion. Infinite loop of loyalty.", "link": "" },
+    { "title": "Upcycle old jeans & t-shirts into durable braided dog tug toys", "link": "https://www.instructables.com/T-Shirt-Rope-Dog-Toy/" }
   ],
   "horse": [
-    { "title": "DIY horseshoe crafts and decor ideas", "link": "https://www.youtube.com/watch?v=7z0BVPRJEGA" }
+    { "title": "DIY horseshoe coat rack and rustic home decor", "link": "https://www.youtube.com/watch?v=7z0BVPRJEGA" },
+    { "title": "Repurpose vintage leather horse bridles into wall hangers", "link": "https://www.pinterest.com/search/pins/?q=horseshoe%20crafts" }
   ],
   "sheep": [
-    { "title": "How to upcycle wool sweaters (felted wool projects)", "link": "https://www.instructables.com/How-to-upcycle-AKA-feltfull-a-wool-sweater/" }
+    { "title": "How to upcycle wool sweaters into felted mittens & dryer balls", "link": "https://www.instructables.com/How-to-upcycle-AKA-feltfull-a-wool-sweater/" },
+    { "title": "Zero-waste raw wool insulation & garden moisture retention mulch", "link": "https://www.gardeningknowhow.com/garden-how-to/mulch/using-wool-mulch.htm" }
   ],
   "cow": [
-    { "title": "Cowhide rug care and cleaning guide", "link": "https://www.bhg.com/homekeeping/house-cleaning/tips/how-to-clean-cowhide-rug/" }
+    { "title": "⚠️ Please do NOT upcycle live cows. Provide grass & head scritches.", "link": "" },
+    { "title": "Repurpose feed burlap bags into rustic garden planters & tote bags", "link": "https://www.instructables.com/Burlap-Feed-Bag-Tote/" }
   ],
   "elephant": [
-    { "title": "Elephant home decor upcycling tutorial", "link": "https://www.youtube.com/watch?v=xQ3xmmC6swg" }
+    { "title": "Elephant-themed upcycled garden planter tutorial", "link": "https://www.youtube.com/watch?v=xQ3xmmC6swg" },
+    { "title": "Repurpose scrap wood into carved elephant bookends", "link": "https://www.instructables.com/Wooden-Bookends/" }
   ],
   "bear": [
-    { "title": "Teddy bear restoration and repair (Instructables)", "link": "https://www.instructables.com/Stuffed-Animal-Restoration/" }
+    { "title": "Teddy bear restoration & stuffed animal memory pillow project", "link": "https://www.instructables.com/Stuffed-Animal-Restoration/" },
+    { "title": "Turn old plush bears into cozy draft stoppers for winter doors", "link": "https://www.instructables.com/Draft-Stopper/" }
   ],
   "zebra": [
-    { "title": "DIY zebra-print rug from old T-shirts", "link": "https://upcycledesignlab.com/diy-upcycled-t-shirt-rug-plush-zebra-bath-mat/" }
+    { "title": "DIY zebra-pattern upcycled T-shirt rug & bath mat", "link": "https://upcycledesignlab.com/diy-upcycled-t-shirt-rug-plush-zebra-bath-mat/" },
+    { "title": "Turn black & white fabric scraps into high-contrast tote bags", "link": "https://www.instructables.com/Scrap-Fabric-Tote-Bag/" }
   ],
   "giraffe": [
-    { "title": "Toilet-roll giraffe craft tutorial", "link": "https://www.youtube.com/watch?v=GLi4XVZST7g" }
+    { "title": "Upcycled cardboard tube giraffe craft for kids", "link": "https://www.youtube.com/watch?v=GLi4XVZST7g" },
+    { "title": "Repurpose tall floor lamps into playful giraffe-themed room decor", "link": "https://www.instructables.com/Giraffe-Lamp/" }
   ],
   "backpack": [
-    { "title": "Repurpose old backpack into a handbag", "link": "https://www.youtube.com/watch?v=3dYfQlqpxCg" }
+    { "title": "Repurpose old backpack into a bicycle handlebar bag", "link": "https://www.youtube.com/watch?v=3dYfQlqpxCg" },
+    { "title": "Turn backpack heavy-duty straps & buckles into luggage tie-downs", "link": "https://www.instructables.com/Backpack-Repurposing/" }
   ],
   "umbrella": [
-    { "title": "How to upcycle broken umbrellas", "link": "https://www.upcyclethat.com/umbrella-upcycling/" }
+    { "title": "Upcycle waterproof umbrella canopy into reusable shopping tote", "link": "https://www.upcyclethat.com/umbrella-upcycling/" },
+    { "title": "Turn umbrella metal ribs into garden plant supports & trellis", "link": "https://www.gardeningknowhow.com/special/containers/repurposed-umbrella-trellis.htm" }
   ],
   "handbag": [
-    { "title": "Repurpose old purses creative ideas", "link": "https://www.diyncrafts.com/39104/repurpose/19-creative-ways-to-repurpose-old-purses" }
+    { "title": "Repurpose old leather purse into a hanging garden succulent planter", "link": "https://www.diyncrafts.com/39104/repurpose/19-creative-ways-to-repurpose-old-purses" },
+    { "title": "Turn handbag leather panels into custom journal covers", "link": "https://www.instructables.com/Leather-Journal-Cover/" }
   ],
   "tie": [
-    { "title": "Necktie upcycling projects guide", "link": "https://www.thesprucecrafts.com/upcycle-neckties-4121924" }
+    { "title": "Upcycle vintage silk neckties into camera straps & zip pouches", "link": "https://www.thesprucecrafts.com/upcycle-neckties-4121924" },
+    { "title": "Woven necktie chair seat cushion upcycling tutorial", "link": "https://www.instructables.com/Necktie-Chair-Seat/" }
   ],
   "suitcase": [
-    { "title": "Vintage suitcase furniture ideas", "link": "https://www.diyncrafts.com/39104/repurpose/19-creative-ways-to-repurpose-old-suitcases" }
+    { "title": "Turn vintage hard-shell suitcase into a pet bed or wall shelf", "link": "https://www.diyncrafts.com/39104/repurpose/19-creative-ways-to-repurpose-old-suitcases" },
+    { "title": "Convert old luggage into a Bluetooth boombox speaker system", "link": "https://www.instructables.com/Suitcase-Boombox/" }
   ],
   "frisbee": [
-    { "title": "DIY frisbee planters tutorial", "link": "https://www.upcyclethat.com/frisbee-upcycling/" }
+    { "title": "Upcycle old frisbees into hanging bird bath trays", "link": "https://www.upcyclethat.com/frisbee-upcycling/" },
+    { "title": "Turn plastic frisbees into wall clocks & desk organizers", "link": "https://www.instructables.com/Frisbee-Clock/" }
   ],
   "skis": [
-    { "title": "Adirondack chair made from old skis", "link": "https://www.instructables.com/Adirondack-Chair-Made-From-Old-Skis/" }
+    { "title": "Build an Adirondack chair or wine rack from old skis", "link": "https://www.instructables.com/Adirondack-Chair-Made-From-Old-Skis/" },
+    { "title": "Build a rustic ski coat rack or garden fence border", "link": "https://www.instructables.com/Ski-Coat-Rack/" }
   ],
   "snowboard": [
-    { "title": "Recycled wooden giraffe spork (zebra-style decor)", "link": "https://www.reddit.com/r/upcycling/comments/nj7sjv/upcycled_wooden_giraffe_spork_what_zoo_animals_do_you/" }
+    { "title": "Upcycle old snowboard into a coffee table or outdoor bench", "link": "https://www.instructables.com/Snowboard-Bench/" },
+    { "title": "Snowboard wall rack & floating wall bookshelf conversion", "link": "https://www.instructables.com/Snowboard-Shelf/" }
   ],
   "sports ball": [
     { "title": "Soccer ball planter with drainage holes", "link": "https://www.amazon.com/Soccer-Shaped-Planter-Garden-Sports/dp/B0D4G5Y68H" },
